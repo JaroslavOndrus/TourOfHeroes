@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Item } from './item';
-import { Items } from './mock-items';
+import { ITEMS, Items } from './mock-items';
 import { Observable, of } from 'rxjs';
 import { MessageService } from './message.service';
 
@@ -12,7 +12,7 @@ export class ItemService {
   constructor(private messageService: MessageService) { }
 
   getItems(): Observable<Item[]> {
-    const items = of(Items);
+    const items = of(ITEMS);
     this.messageService.add('ItemService: fetched items');
     return items;
   }
