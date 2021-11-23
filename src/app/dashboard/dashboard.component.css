@@ -1,5 +1,7 @@
 h2 {
     text-align: center;
+    font-weight: bold;
+    color: #2445a8;
   }
   
   .heroes-menu {
@@ -17,18 +19,20 @@ h2 {
   }
   
   a {
-    background-color: #3f525c;
     border-radius: 2px;
     padding: 1rem;
     font-size: 1.2rem;
     text-decoration: none;
     display: inline-block;
-    color: #fff;
     text-align: center;
     width: 100%;
     min-width: 70px;
     margin: .5rem auto;
     box-sizing: border-box;
+    font-weight: bold;
+
+    background-color: #cef0ff;
+    color: #2445a8;
   
     /* flexbox */
     order: 0;
@@ -44,5 +48,6 @@ h2 {
   }
   
   a:hover {
-    background-color: #000;
+    background-color: #a7e2fc;
+    color: #1b3b99;
   }

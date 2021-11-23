@@ -6,15 +6,16 @@ h1 {
     text-decoration: none;
     margin-top: 10px;
     display: inline-block;
-    background-color: #e8e8e8;
-    color: #3d3d3d;
+    background-color: #cef0ff;
+    color: #2445a8;
     border-radius: 4px;
     margin-left: 4px;
+    font-weight: bold;
   }
   
   nav a:hover {
-    color: white;
-    background-color: #42545C;
+    background-color: #a7e2fc;
+    color: #1b3b99;
   }
   nav a.active {
     background-color: black;
