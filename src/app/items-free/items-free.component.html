@@ -1,1 +1,15 @@
-<p>items-free works!</p>
+<ul>
+    <li *ngFor="let item of itemsFree">
+        <a *ngIf="item.isAvailable && itemsFree.length > 0; else displayNone" >
+            <span>{{item.id}}</span> {{item.name + " price:" + item.price}}
+            <button (click)="buyFreeItems(item)">Buy Item!</button>
+        </a>
+        <ng-template #displayNone>
+            <h2>Free item: {{item.name}} SOLD OUT!</h2>
+        </ng-template>
+    </li>
+</ul>
+
+<div>
+   <button (click)="goBack()">Go back</button>
+</div>
