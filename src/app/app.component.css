@@ -1,22 +1,24 @@
 h1 {
-    margin-bottom: 0;
+  margin-bottom: 0;
   }
-  nav a {
-    padding: 1rem;
-    text-decoration: none;
-    margin-top: 10px;
-    display: inline-block;
-    background-color: #cef0ff;
-    color: #2445a8;
-    border-radius: 4px;
-    margin-left: 4px;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    background-color: #a7e2fc;
-    color: #1b3b99;
-  }
-  nav a.active {
-    background-color: black;
-  }
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #cef0ff;
+  color: #2445a8;
+  border-radius: 4px;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #a7e2fc;
+  color: #1b3b99;
+}
+nav a.active {
+  background-color: black;
+}
+
+
