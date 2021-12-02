@@ -7,15 +7,17 @@ input {
   padding: .5rem;
 }
 button {
-  margin-top: 20px;
-  background-color: #eee;
+  margin-top: 4px;
+  background-color: #cef0ff;
+  color: #2445a8;
   padding: 1rem;
   border-radius: 4px;
   font-size: 1rem;
   margin-left: 4px;
+  font-weight: bolder;
 }
 button:hover {
-  background-color: #cfd8dc;
+  background-color: #9fe1fd;
 }
 button:disabled {
   background-color: #eee;
