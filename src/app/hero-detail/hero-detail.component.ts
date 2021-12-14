@@ -6,6 +6,7 @@ import { HeroService } from '../hero.service';
 import { ITEMS } from '../mock-items';
 import { Items } from '../mock-items';
 import { Item } from '../item';
+import { ReplaySubject } from 'rxjs';
 
 
 @Component({
