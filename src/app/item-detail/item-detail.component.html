@@ -3,5 +3,5 @@
     <h2>{{item.name | uppercase}} Details</h2>
     <div id="itemId"><span>id: </span>{{item.id}}</div>
     <div id="itemPrice"><span>price: </span>{{item.price}}</div>   
-    <button><a>Sell Item</a></button> 
+    <button *ngIf = "!item.isAvailable" (click)="callParrentDelete()">Sell Item</button>  
 </div>

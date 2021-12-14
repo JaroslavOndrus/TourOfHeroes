@@ -4,6 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { HeroService } from '../hero.service';
 import { ITEMS } from '../mock-items';
+import { Items } from '../mock-items';
+import { Item } from '../item';
 
 
 @Component({
@@ -13,7 +15,8 @@ import { ITEMS } from '../mock-items';
 })
 export class HeroDetailComponent implements OnInit {
 
-  hero: Hero | undefined;
+  @Input() hero!: Hero;
+  itemsFree = ITEMS;
 
   constructor(
     private route: ActivatedRoute,
@@ -36,4 +39,20 @@ export class HeroDetailComponent implements OnInit {
   }
 
   click(): void { }
+
+  sellItems(item: Item): void {
+    if(item.isAvailable == false){
+      this.hero.money += item.price;
+      item.isAvailable = true;
+      this.itemsFree.push(item);
+      this.deleteMsg(item);
+    }
+  }
+
+  deleteMsg(item:Item) {
+    const index: number = this.hero.items.indexOf(item);
+    if (index !== -1) {
+        this.hero.items.splice(index, 1);
+    }
+  }
 }

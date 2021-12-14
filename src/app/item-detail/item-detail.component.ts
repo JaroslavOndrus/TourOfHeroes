@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Item } from '../item';
 
 @Component({
@@ -12,7 +12,16 @@ export class ItemDetailComponent implements OnInit {
 
   @Input() item?: Item;
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+  }
+
+  @Output() deleteEvent = new EventEmitter <Item> ();
+  callParrentDelete(){
+    this.deleteEvent.emit();
+  }
+  
+  sellItems() {
+
   }
 
 }

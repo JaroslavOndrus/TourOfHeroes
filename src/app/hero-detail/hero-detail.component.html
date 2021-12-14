@@ -15,8 +15,8 @@
   </div>
  
     <div class="items" *ngFor="let item of hero.items"> 
-          <app-item-detail [item]="item"></app-item-detail>
-    </div>
+          <app-item-detail [item]="item" (deleteEvent)="sellItems(item)"></app-item-detail>
+    </div> 
 </div>
 
 
