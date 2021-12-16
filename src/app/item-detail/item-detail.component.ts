@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Item } from '../item';
+import { ItemService } from '../item.service';
 
 @Component({
   selector: 'app-item-detail',
@@ -8,7 +9,9 @@ import { Item } from '../item';
 })
 export class ItemDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private itemService: ItemService) { }
+
+  items: Item[] = [];
 
   @Input() item?: Item;
 
@@ -16,12 +19,19 @@ export class ItemDetailComponent implements OnInit {
   }
 
   @Output() deleteEvent = new EventEmitter <Item> ();
+  
   callParrentDelete(){
     this.deleteEvent.emit();
   }
-  
+
   sellItems() {
 
+  }
+
+  save(): void {
+    if (this.item){
+      this.itemService.updateItem(this.item);
+    }
   }
 
 }
