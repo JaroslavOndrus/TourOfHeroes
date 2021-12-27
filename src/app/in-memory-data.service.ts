@@ -23,15 +23,15 @@ export class InMemoryDataService implements InMemoryDbService {
 
     const items = [
       { id: 11, name: 'Iron Hammer', price: 150, isAvailable: true}, 
-      { id: 12, name: 'Golden Axe', price: 250, isAvailable: true},
-      { id: 13, name: 'Wooden Stick', price: 120, isAvailable: true},
-      { id: 14, name: 'Knife', price: 400, isAvailable: true},
-      { id: 15, name: 'Sword', price: 750, isAvailable: true},
-      { id: 16, name: 'Butcher Knife', price: 120, isAvailable: true},
-      { id: 17, name: 'Machette', price: 200, isAvailable: true},
-      { id: 18, name: "Kameň", price: 50, isAvailable: true},
-      { id: 19, name: 'Axe', price: 900, isAvailable: true},
-      { id: 20, name: 'Hammer', price: 1000, isAvailable: true},
+      { id: 12, name: 'Pistol', price: 250, isAvailable: true},
+      { id: 13, name: 'Stick', price: 120, isAvailable: true},
+      { id: 14, name: 'Steel Knife', price: 400, isAvailable: true},
+      { id: 15, name: 'Scytche', price: 750, isAvailable: true},
+      { id: 16, name: 'Cutlass', price: 120, isAvailable: true},
+      { id: 17, name: 'Machine Gun', price: 200, isAvailable: true},
+      { id: 18, name: "Stone", price: 50, isAvailable: true},
+      { id: 19, name: 'Wrench', price: 900, isAvailable: true},
+      { id: 20, name: 'Axe', price: 1000, isAvailable: true},
     ]
 
     return { heroes, items };
