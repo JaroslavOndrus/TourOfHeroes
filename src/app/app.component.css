@@ -1,5 +1,11 @@
+html{
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
 h1 {
   margin-bottom: 0;
+  font-weight: bolder;
   }
 nav a {
   padding: 1rem;
@@ -9,7 +15,6 @@ nav a {
   background-color: #cef0ff;
   color: #2445a8;
   border-radius: 4px;
-  margin-left: 4px;
   font-weight: bold;
 }
 

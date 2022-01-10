@@ -1,18 +1,19 @@
 h2 {
-    color: rgb(161, 55, 55);
-    font-weight: bolder;
-    text-decoration: underline;
-  }
-  
-  .clear {
-    color: #333;
-    background-color: #eee;
-    margin-bottom: 12px;
-    padding: 1rem;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  .clear:hover {
-    color: white;
-    background-color: #42545C;
-  }
+  color: rgb(161, 55, 55);
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.clear {
+  color: rgb(197, 64, 64);
+  font-weight: bolder;
+  background-color: rgb(255, 206, 206);
+  margin-bottom: 12px;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.clear:hover {
+  background-color: rgb(252, 191, 191);
+}

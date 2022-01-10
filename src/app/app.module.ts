@@ -18,6 +18,8 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { ItemSearchComponent } from './item-search/item-search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { MatSliderModule } from '@angular/material/slider';
   ],
   imports: [
     BrowserModule,
+    MatButtonModule,
     MatSliderModule,
     FormsModule,
     AppRoutingModule,
