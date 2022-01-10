@@ -9,6 +9,11 @@
   </button>
 </div>
 
+<select (change) = "dropDown($event)">
+  <option>ID</option>
+  <option>Name</option>
+</select>
+
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <a routerLink="/detail/{{hero.id}}">

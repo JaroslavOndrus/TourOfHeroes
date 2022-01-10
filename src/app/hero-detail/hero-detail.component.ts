@@ -16,7 +16,7 @@ import { ReplaySubject } from 'rxjs';
 })
 export class HeroDetailComponent implements OnInit {
 
-  @Input() hero!: Hero;
+  hero: Hero;
   itemsFree = ITEMS;
 
   constructor(

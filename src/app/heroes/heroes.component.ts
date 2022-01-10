@@ -37,4 +37,22 @@ export class HeroesComponent implements OnInit {
     this.heroes = this.heroes.filter(h => h !== hero);
     this.heroService.deleteHero(hero.id).subscribe();
   }
+
+  option: string = '';
+
+  dropDown(event: any){
+    this.option = event.target.value;
+
+    if(this.option == "ID"){
+      return this.heroes.sort((a, b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
+    }
+    
+    else if(this.option == "Name"){
+      return this.heroes.sort((a, b) => a.name.localeCompare(b.name));
+    }
+    
+    else if(this.option == "Money"){
+      return this.heroes.sort((a, b) => a.money > b.money ? -1 : a.money < b.money ? 1 : 0);
+    }
+  }
 }
