@@ -76,13 +76,12 @@ button.delete {
 position: absolute;
 left: 210px;
 top: 5px;
-background-color: white;
-color:  #525252;
+background-color: rgb(255, 206, 206);
+color: rgb(197, 64, 64);
 font-size: 1.1rem;
 padding: 1px 10px 3px 10px;
 }
 
 button.delete:hover {
-background-color: #525252;
-color: white;
+background-color: rgb(252, 191, 191);
 }
