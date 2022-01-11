@@ -23,13 +23,9 @@ nav a {
 
 nav a {
   color: #2445a8;
-  text-decoration: underline;
   font-weight: bold;
 }
 
-nav a:hover {
-  font-size: 150%;
-}
 nav a.active {
   background-color: black;
 }
@@ -42,3 +38,6 @@ a{
   padding: 1rem;
 }
 
+nav a:hover{
+  font-size: 115%;
+}

@@ -12,7 +12,9 @@
 
   </div>
   <div>
-    <span><label>Money: </label> </span><label>{{ hero.money }}</label><br>
+    <span><label>Money: </label> <label>{{ hero.money }}</label></span><br>
+    <span><label>Lives: </label> <label>{{ hero.life }}</label></span><br>
+    <span><label>Strenght: </label> <label> {{hero.strenght}} </label></span><br>
     <button mat-raised-button (click)="click()"><a routerLink="/items-free/{{hero.id}}">Buy Item</a></button>
     <button mat-raised-button (click)="goBack()">Go back</button>
     <button mat-raised-button (click)="save()">Save</button>
