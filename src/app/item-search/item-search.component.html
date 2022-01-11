@@ -1,6 +1,8 @@
 <div id="search-component">
     <label for="search-box">Item Search</label>
-    <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+    <mat-form-field>
+      <input matInput #searchBox id="search-box" (input)="search(searchBox.value)" />
+    </mat-form-field>
 
     <ul class="search-result">
       <li *ngFor="let item of items$ | async" >

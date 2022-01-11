@@ -30,9 +30,8 @@ h2 {
     margin: .5rem auto;
     box-sizing: border-box;
     font-weight: bold;
+    color:#1b3b99;
 
-    background-color: #cef0ff;
-    color: #2445a8;
   
     /* flexbox */
     order: 0;
@@ -48,6 +47,6 @@ h2 {
   }
   
   a:hover {
-    background-color: #a7e2fc;
     color: #1b3b99;
+    font-size: 165%;
   }

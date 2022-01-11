@@ -6,7 +6,10 @@
   </div>
   <div>
     <label for="hero-name">Hero name: </label>
-    <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name" />
+    <mat-form-field floatLabel = "never">
+      <input matInput id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name" />
+    </mat-form-field>
+
   </div>
   <div>
     <span><label>Money: </label> </span><label>{{ hero.money }}</label><br>

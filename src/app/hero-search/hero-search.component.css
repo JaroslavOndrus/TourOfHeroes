@@ -15,7 +15,7 @@ display: block;
 }
 
 input:focus {
-outline: #336699 auto 1px;
+/*outline: #336699 auto 1px;*/
 }
 
 li {
