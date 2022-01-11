@@ -7,6 +7,8 @@ h1 {
   margin-bottom: 0;
   font-weight: bolder;
   }
+
+/*
 nav a {
   padding: 1rem;
   text-decoration: none;
@@ -17,13 +19,26 @@ nav a {
   border-radius: 4px;
   font-weight: bold;
 }
+*/
+
+nav a {
+  color: #2445a8;
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 nav a:hover {
-  background-color: #a7e2fc;
-  color: #1b3b99;
+  font-size: 150%;
 }
 nav a.active {
   background-color: black;
 }
 
+.navbar {
+  justify-content: space-between;
+}
+
+a{
+  padding: 1rem;
+}
 
