@@ -19,8 +19,10 @@ import { ItemSearchComponent } from './item-search/item-search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule} from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { HeroFormComponent } from './hero-form/hero-form.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     DashboardComponent,
     ItemsFreeComponent,
     HeroSearchComponent,
-    ItemSearchComponent
+    ItemSearchComponent,
+    HeroFormComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatButtonModule,
     MatSliderModule,
     FormsModule,
+    CommonModule,
     MatToolbarModule,
     AppRoutingModule,
     HttpClientModule,
