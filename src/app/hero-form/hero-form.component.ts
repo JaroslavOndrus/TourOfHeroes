@@ -8,16 +8,15 @@ import { FormHero } from '../hero';
 })
 export class HeroFormComponent {
 
-  powers = ['Really Smart', 'Super Flexible',
-            'Super Hot', 'Weather Changer'];
+  model = new FormHero(18, 'Dr IQ', "250", "10", "50");
 
-  model = new FormHero(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
+  heroes: FormHero[] = [];
 
   submitted = false;
 
   onSubmit() { this.submitted = true; }
 
   newHero(){
-    this.model = new FormHero(42, '', '');
+    this.model = new FormHero(42, '', '', '', '');
   }
 }
