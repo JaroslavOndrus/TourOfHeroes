@@ -11,12 +11,12 @@ export interface Hero{
 
 export class FormHero {
 
-    constructor(
-      public id: number,
-      public name: string,
-      public money: number,
-      public life: number,
-      public strenght: number,
-    ) {  }
+  constructor(
+    public id: number,
+    public name: string,
+    public money: number,
+    public life: number,
+    public strenght: number,
+  ) {  }
   
-  }
+}

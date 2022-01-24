@@ -23,6 +23,7 @@ import { MatInputModule} from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { CommonModule } from '@angular/common';
+import { ItemFormComponent } from './item-form/item-form.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CommonModule } from '@angular/common';
     ItemsFreeComponent,
     HeroSearchComponent,
     ItemSearchComponent,
-    HeroFormComponent
+    HeroFormComponent,
+    ItemFormComponent
   ],
   imports: [
     BrowserModule,
