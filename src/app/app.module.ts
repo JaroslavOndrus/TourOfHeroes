@@ -24,6 +24,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeroFormComponent } from './hero-form/hero-form.component';
 import { CommonModule } from '@angular/common';
 import { ItemFormComponent } from './item-form/item-form.component';
+import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
+import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenu, MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
@@ -38,13 +46,17 @@ import { ItemFormComponent } from './item-form/item-form.component';
     HeroSearchComponent,
     ItemSearchComponent,
     HeroFormComponent,
-    ItemFormComponent
+    ItemFormComponent,
+    LoginComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     MatInputModule,
     MatButtonModule,
     MatSliderModule,
+    MatSelectModule,
+    MatIconModule,
     FormsModule,
     CommonModule,
     MatToolbarModule,
@@ -53,7 +65,12 @@ import { ItemFormComponent } from './item-form/item-form.component';
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     ),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
