@@ -14,9 +14,9 @@ export class FormHero {
     constructor(
       public id: number,
       public name: string,
-      public money: string,
-      public life: string,
-      public strenght: string,
+      public money: number,
+      public life: number,
+      public strenght: number,
     ) {  }
   
   }
